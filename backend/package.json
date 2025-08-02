@@ -3,7 +3,20 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testTimeout": 10000,
+    "verbose": true,
+    "collectCoverage": false,
+    "testMatch": [
+      "**/test/**/*.test.js",
+      "**/tests/**/*.test.js"
+    ]
   },
   "keywords": [],
   "author": "",
